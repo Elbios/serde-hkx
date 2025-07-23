@@ -1,16 +1,16 @@
 [package]
 name = "havok_types"
 description = "Havok Behavior basic types"
-version.workspace = true
-
-authors.workspace = true
-categories.workspace = true
-edition.workspace = true
-keywords.workspace = true
-license.workspace = true
-readme.workspace = true
-repository.workspace = true
-rust-version.workspace = true
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+authors = ["Your Name <your@email.com>"]
+repository = "https://github.com/youruser/havok_types"
+categories = [
+    "data-structures",
+    "serialization",
+    "game-development",
+]
+keywords = ["havok", "types", "serde", "game", "behavior"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -29,7 +29,7 @@ serde_json = { workspace = true }        # To read and write Json files
 [features]
 default = []
 json_schema = ["dep:schemars"]
-serde = ["dep:serde", "dep:serde_with"]
+serde-support = ["dep:serde", "dep:serde_with"]
 
 [lints]
 workspace = true
