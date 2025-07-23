@@ -29,7 +29,8 @@ serde_json = { workspace = true }        # To read and write Json files
 [features]
 default = []
 json_schema = ["schemars"]
-serde-support = ["dep:serde", "dep:serde_with"]
+serde-support = ["serde", "serde_with"]
+
 
 [lints]
 workspace = true
